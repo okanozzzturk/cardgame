@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardboard {
+  margin-top: 30px;
+  width: 900px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-gap: 5px;
+}
+.mainDiv {
+  border: 1px solid black;
+  background-color: rgba(211, 69, 69, 0.856);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokePics {
+  width: 90%;
+  height: 90%;
+  top: 0;
+  left: 0;
+}
+
+.selectedPoke {
+  border: 10px solid lightblue;
+}
+.pokeUnVisible {
+  opacity: 0;
+}
+.pokeVisible {
+  opacity: 1;
+}
+
+.poke-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pokeClick {
+  pointer-events: none;
+}
